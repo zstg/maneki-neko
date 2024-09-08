@@ -11,28 +11,6 @@ from time import sleep
 import os, subprocess
 import resources
 
-
-#LICENSE
-'''
-StratOS-Maneki-Neko: Welcome Screen GUI Application for StratOS-Linux, written in Python and PyQt5
-    Copyright (C) 2024  Adithya Sunil Kumar
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
-'''
-
-
 # globals
 app = QApplication(sys.argv)
 
@@ -129,7 +107,7 @@ lastPage=3  # the last page of the app is the 3rd page
             # 1st-> welcome page    2nd-> overview on Stratos   3rd -> last page with buttons to install programs, distro etc
             # 4th-> program installer
 
-WORK_DIR = os.getcwd() # gets working directory of the python script
+WORK_DIR = "/opt/maneki-neko" # gets working directory of the python script
                        # at install location value shoulda be /opt/maneki-neko
                        # to HARDCODE this , change WORK_DIR to /opt/maneki-neko
 
